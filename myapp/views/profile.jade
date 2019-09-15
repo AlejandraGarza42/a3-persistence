@@ -1,0 +1,23 @@
+extends layout 
+
+-var id = user.id 
+-var username =  user.username 
+-var name = user.displayName
+
+p ID: 
+p=id
+br 
+p Username:  
+p=username
+br 
+p Name: 
+p=name 
+br 
+
+if user.emails != null
+    -var email = user.emails[0].value
+    p Email: 
+    p=email
+
+button(type = "submit" value = "Submit")
+

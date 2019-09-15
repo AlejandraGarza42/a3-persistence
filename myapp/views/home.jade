@@ -1,0 +1,22 @@
+<!--
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+-->
+
+extends layout 
+
+block content
+
+-var username = user.username
+
+if user == null
+    p
+    | Welcome! Please  #[a(href = "/login") log in]
+    |Hello 
+    p= username 
+    p
+    | View you #[a(href = "/profile") profile]
+
