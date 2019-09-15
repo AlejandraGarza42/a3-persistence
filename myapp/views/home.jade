@@ -10,13 +10,14 @@ extends layout
 
 block content
 
--var username = user.username
+  -var username = user.username
 
-if user == null
-    p
-    | Welcome! Please  #[a(href = "/login") log in]
-    |Hello 
-    p= username 
-    p
-    | View you #[a(href = "/profile") profile]
+  if user == null
+      h1=title
+      p
+      | Welcome! Please  #[a(href = "/login") log in]
+      |Hello 
+      p= username 
+      p
+      | View you #[a(href = "/profile") profile]
 

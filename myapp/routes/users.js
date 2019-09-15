@@ -1,22 +1,21 @@
-/** Original, do not want to delete just yet
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. 
+/* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
 module.exports = router;
-*/
 
-/*User Data */
+/*Old one 
+User Data
 var users = [
   {id: 1, username: 'user1', password: 'iamone', displayName: 'User One', emails: [{value: 'user1@example.com'}]},
   {id: 2, username: 'user2', password: 'iamtwo', displayName: 'User Two', emails: [{value: 'user2@example.com'}]}
 ];
 
-/*GET login page */
+/*GET login page
 exports.findById = function(id, cb){
   process.nextTick(function(){
     var idx = id -1;
@@ -39,3 +38,4 @@ exports.findByUsernam = function(username, cb){
     return cb(null, null);
   })
 }
+*/
