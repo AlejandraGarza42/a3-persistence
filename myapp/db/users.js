@@ -1,6 +1,6 @@
 var records = [
-  {id: 1, username: 'user1', password: 'iamone', displayName: 'User One', emails: [{value: 'user1@example.com'}]},
-  {id: 2, username: 'user2', password: 'iamtwo', displayName: 'User Two', emails: [{value: 'user2@example.com'}]}
+  {id: 1, username: 'user1', password: '1', displayName: 'User One', emails: [{value: 'user1@example.com'}]},
+  {id: 2, username: 'user2', password: '2', displayName: 'User Two', emails: [{value: 'user2@example.com'}]}
 ];
 
 
