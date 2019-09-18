@@ -90,7 +90,7 @@ app.use( passport.session() )
 
   app.post('/edit',
   function(req, res){
-    
+    console.log(req.body.ID)
     db.get(currentUser)
         .remove({"ID": req.body.ID})
         .write()
@@ -116,6 +116,7 @@ app.use( passport.session() )
 
   app.post('/delete',
   function(req, res){
+      console.log(req.body.ID)
       db.get(currentUser) 
         .remove({"ID": req.body.ID})
         .write()

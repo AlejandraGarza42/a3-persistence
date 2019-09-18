@@ -99,8 +99,8 @@ const editEntry = function(e){
     const body = JSON.stringify({
         ID: document.querySelector("#editId").value,
         Title: document.querySelector("#editTitle").value,
-        Genre: document.querySelector('#editDebre').value,
-        Rating: document.querySelector('#edutRating').value
+        Genre: document.querySelector('#editGenre').value,
+        Rating: document.querySelector('#editRating').value
     })
 
     fetch('/edit',{
