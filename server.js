@@ -7,9 +7,10 @@ const express   = require( 'express' ),
       low       = require('lowdb')
       FileSync  = require('lowdb/adapters/FileSync')
       helmet    = require('helmet')
+      logger    =require('morgan')
 app.use( express.static('./') )
 app.use( bodyParser.json() )
-app.use(helmet())
+app.use(helmet()) //3 middlwwere 
 
 //need this here or it gives me an error
 //passport.initialize()
@@ -76,9 +77,9 @@ const users = [
 passport.use( new Local( myLocalStrategy ) )
 //app.use(passport.initialize())
 app.use( require('express-session')({ secret:'cats cats cats', resave:false, saveUninitialized:false }));
-
-app.use( passport.initialize() )
+app.use( passport.initialize() )  
 app.use( passport.session() )
+app.use(logger('dev'))
 
   app.post( 
     '/home',

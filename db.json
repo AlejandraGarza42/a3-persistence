@@ -1,5 +1,5 @@
 {
-  "Count": 115,
+  "Count": 117,
   "charlie": [
     {
       "ID": 100,
@@ -20,15 +20,21 @@
       "Rating": "4"
     },
     {
-      "ID": 102,
-      "Title": "Inside Out",
-      "Genre": "Horror",
-      "Rating": ""
-    },
-    {
       "ID": 113,
       "Title": "Lego Movie 2",
       "Genre": "Adventure",
+      "Rating": "3"
+    },
+    {
+      "ID": 115,
+      "Title": "Coco",
+      "Genre": "Adventure",
+      "Rating": "5"
+    },
+    {
+      "ID": 116,
+      "Title": "IT Chapter 2",
+      "Genre": "Horror ",
       "Rating": "3"
     }
   ],
