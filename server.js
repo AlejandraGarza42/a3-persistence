@@ -6,8 +6,10 @@ const express   = require( 'express' ),
       bodyParser= require( 'body-parser' )
       low       = require('lowdb')
       FileSync  = require('lowdb/adapters/FileSync')
+      helmet    = require('helmet')
 app.use( express.static('./') )
 app.use( bodyParser.json() )
+app.use(helmet())
 
 //need this here or it gives me an error
 //passport.initialize()
@@ -71,9 +73,9 @@ const users = [
     }
   }
 
-  passport.use( new Local( myLocalStrategy ) )
-  //app.use(passport.initialize())
-  app.use( require('express-session')({ secret:'cats cats cats', resave:false, saveUninitialized:false }));
+passport.use( new Local( myLocalStrategy ) )
+//app.use(passport.initialize())
+app.use( require('express-session')({ secret:'cats cats cats', resave:false, saveUninitialized:false }));
 
 app.use( passport.initialize() )
 app.use( passport.session() )
@@ -97,10 +99,10 @@ app.use( passport.session() )
 
   app.post('/edit',
   function(req, res){
-    console.log("before editing")
-    console.log(req.body.Title)
-    console.log(req.body.Genre)
-    console.log(req.body.Rating)
+    // console.log("before editing")
+    // console.log(req.body.Title)
+    // console.log(req.body.Genre)
+    // console.log(req.body.Rating)
 
     //console.log(db.get(currentUser).find({ID: Number(req.body.ID)}).value())
     //console.log(db.get(currentUser).find({ID: Number(req.body.ID)}).get(Title))
