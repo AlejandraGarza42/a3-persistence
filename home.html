@@ -3,11 +3,17 @@
   <head>
     <meta charset='utf-8'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!--CSS Framework-->
+   <link rel="stylesheet" href="spectre-0.5.8/dist/spectre.min.css">
+   <link rel="stylesheet" href="spectre-0.5.8/dist/spectre-exp.min.css">
+   <link rel="stylesheet" href="spectre-0.5.8/dist/spectre-icons.min.css">
     <script src="home.js"></script>
   </head>
   <body>
     <h1>Welcome!</h1>
     <p>Movie Tracker Allows you to track the movies you have watched and rate them!</p>
+    <h3>Your Current Movies</h3>
+    <p id="table"></p>
     <h3> Want to add a movie?</h3>
        <form action="">
         <p>Title: <input type="text" id="newTitle" value=""></p>
@@ -33,8 +39,6 @@
     </form> 
     <br>
     <br>
-    <h3>Your Current Movies</h3>
-    <p id="table"></p>
     <!--<table id="Data" class="padding-table-columns">
         <tr>
             <th>ID</th>
