@@ -1,6 +1,6 @@
 ## Movie Tracker!
 
-your glitch link e.g. https://a3-alejandra-garza.glitch.me/
+your glitch link: https://a3-alejandra-garza.glitch.me/
 
 ## Current Users: 
 Username: charlie   
